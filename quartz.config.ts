@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "webdogu",
+    pageTitle: "웹도구",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
