@@ -1,3 +1,82 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+:root {
+  --content-max-width: 1200px;
+}
+
+.page {
+  width: 100%;
+  max-width: none;
+}
+
+.page > #quartz-body {
+  width: 100%;
+  column-gap: 0.75rem;
+  padding-inline: 0;
+}
+
+.page .center > article {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 2rem 2.25rem;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--dark);
+  line-height: 1.75;
+}
+
+.page .sidebar.left,
+.page .sidebar.right {
+  padding: 2rem;
+}
+
+.page .page-header {
+  margin-top: 0;
+}
+
+.page footer {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .page > #quartz-body {
+    grid-template-columns: minmax(250px, 320px) minmax(0, 1fr) minmax(240px, 300px);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1199px) {
+  :root {
+    --content-max-width: 100%;
+  }
+
+  .page .center > article {
+    padding: 1.75rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .page .sidebar.left {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --content-max-width: 100%;
+  }
+
+  .page > #quartz-body {
+    padding-inline: 0.5rem;
+  }
+
+  .page .center > article {
+    padding: 1.2rem 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

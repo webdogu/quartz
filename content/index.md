@@ -1,5 +1,6 @@
 ---
-title: 한글 테스트
+title: Welcome to Quartz
 ---
 
-테스트 시나리오
+This is a blank Quartz installation.
+See the [documentation](https://quartz.jzhao.xyz) for how to get started.
