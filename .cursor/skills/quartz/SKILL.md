@@ -127,3 +127,5 @@ npx quartz build
 
 - 공식 설정: https://quartz.jzhao.xyz/configuration  
 - 플러그인·폴더 페이지: `FolderPage`, `TagPage` 등은 `quartz.config.ts`의 `emitters`에 이미 포함된 경우가 많다.
+
+ 
