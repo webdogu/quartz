@@ -71,7 +71,7 @@ npx quartz build --serve
 cd /home/webdogu/workspace/quartz
 git add -A
 git status   # 확인
-git commit -m "첫 배포"
+git commit -m "테스트 배포"
 git push origin v4
 ```
 
